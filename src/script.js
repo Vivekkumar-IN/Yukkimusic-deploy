@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
     if (repoLink === "") {
-      warningMessage.textContent = "Please enter your forked repo link.";
+      warningMessage.textContent = "ᴘʟᴇᴀsᴇ ᴇɴᴛᴇʀ ʏᴏᴜʀ ғᴏʀᴋᴇᴅ ʀᴇᴘᴏ ʟɪɴᴋ.";
       warningMessage.classList.remove('hidden'); // Show the warning message
       clearInput(); // Clear the input field
       return;
@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const githubUrlPattern = /^https:\/\/github\.com\/.+\/.+$/;
 
     if (!githubUrlPattern.test(repoLink)) {
-      warningMessage.textContent = "Please enter a valid GitHub repository URL.";
+      warningMessage.textContent = "Pʟᴇᴀsᴇ ᴇɴᴛᴇʀ ᴀ ᴠᴀʟɪᴅ GɪᴛHᴜʙ ʀᴇᴘᴏsɪᴛᴏʀʏ URL.";
       warningMessage.classList.remove('hidden'); // Show the warning message
       clearInput(); // Clear the input field
       return; // Exit the function here
