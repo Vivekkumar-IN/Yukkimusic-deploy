@@ -25,4 +25,4 @@ I don't have much experience with HTML, CSS, or JavaScript. This script was crea
 
 # License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/Vivekkumar-IN/n/blob/master/LICENSE) file for details.
