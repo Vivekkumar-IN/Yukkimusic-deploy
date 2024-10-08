@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
     warningMessage.classList.add('hidden'); // Hide the warning message initially
 
     if (repoLink === "") {
-      warningMessage.textContent = "Please input a forked repo link.";
+      warningMessage.textContent = "Please input Your forked repo link.";
       warningMessage.classList.remove('hidden'); // Show the warning message
       return;
     }
