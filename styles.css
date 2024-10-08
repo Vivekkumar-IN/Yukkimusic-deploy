@@ -30,6 +30,7 @@ h1 {
   display: flex; /* Use flexbox to arrange items in a row */
   justify-content: center; /* Center the links */
   margin-bottom: 15px;
+  font-weight: bold; /* Make text bold for the entire links container */
 }
 
 .link-item {
@@ -39,7 +40,6 @@ h1 {
 .links a {
   color: blue; /* Blue color for links */
   text-decoration: none; /* No underline */
-  font-weight: bold; /* Make text bold */
 }
 
 .separator {
