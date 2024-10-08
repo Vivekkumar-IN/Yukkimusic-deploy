@@ -23,14 +23,19 @@ h1 {
 }
 
 .fork-counter {
-  font-size: 16px;
-  font-weight: bold;
   margin-bottom: 20px;
 }
 
+.links {
+  margin-bottom: 15px;
+}
+
+.link-item {
+  display: inline-block; /* Make the items display inline */
+  margin-right: 10px; /* Space between links */
+}
+
 .links a {
-  display: block;
-  margin-bottom: 10px;
   color: black; /* Plain color */
   text-decoration: none; /* No underline */
 }
