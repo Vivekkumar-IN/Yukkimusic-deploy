@@ -27,10 +27,13 @@ h1 {
 }
 
 .links {
+  display: flex; /* Use flexbox to arrange items in a row */
+  justify-content: space-between; /* Space out the links evenly */
   margin-bottom: 15px;
-  overflow: hidden; /* Hide the overflow */
-  white-space: nowrap; /* Keep everything in one line */
-  width: 80%; /* Show only 80% of the width */
+}
+
+.link-item {
+  margin: 0 5px; /* Add some spacing between items */
 }
 
 .links a {
