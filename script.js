@@ -1,33 +1,27 @@
-// Fetch GitHub fork count using GitHub API
-async function fetchForkCount() {
-    const url = 'https://api.github.com/repos/TheTeamVivek/YukkiMusic';
-    try {
-        const response = await fetch(url);
-        const data = await response.json();
-        const forks = data.forks_count || '0';
-        document.getElementById('forks').innerText = forks;
-    } catch (error) {
-        console.error('Error fetching fork count:', error);
-        document.getElementById('forks').innerText = 'N/A';
-    }
-}
+document.addEventListener("DOMContentLoaded", () => {
+  const forkCountElement = document.getElementById("fork-count");
 
-// Validate the repo URL
-document.getElementById('deploy-btn').addEventListener('click', () => {
-    const repoURL = document.getElementById('repo-url').value;
-    const warningMessage = document.getElementById('warning');
-    const githubRepoRegex = /^https:\/\/github\.com\/[\w-]+\/[\w-]+$/;
+  // Fetch fork count from GitHub API
+  fetch('https://api.github.com/repos/TheTeamVivek/YukkiMusic')
+    .then(response => response.json())
+    .then(data => {
+      forkCountElement.textContent = data.forks_count;
+    })
+    .catch(error => {
+      console.error('Error fetching fork count:', error);
+    });
 
-    if (!githubRepoRegex.test(repoURL)) {
-        // Show warning if not a valid GitHub repo URL
-        warningMessage.style.display = 'block';
+  // Add functionality for the deploy button
+  const deployButton = document.getElementById('deploy-button');
+  const repoLinkInput = document.getElementById('repo-link');
+
+  deployButton.addEventListener('click', () => {
+    const repoLink = repoLinkInput.value;
+    if (repoLink) {
+      // Redirect to deploy page with the forked repo link
+      window.open(repoLink, '_blank');
     } else {
-        // Hide warning if valid
-        warningMessage.style.display = 'none';
-        alert('Deploying repository: ' + repoURL);
-        // You can add your deployment logic here
+      alert("Please input a forked repo link.");
     }
+  });
 });
-
-// Fetch fork count on page load
-window.onload = fetchForkCount;
