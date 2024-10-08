@@ -23,27 +23,16 @@ h1 {
 }
 
 .fork-counter {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  font-size: 16px;
+  font-weight: bold;
   margin-bottom: 20px;
 }
 
-.fork-counter img {
-  width: 20px;
-  margin-right: 5px;
-}
-
-.fork-counter span {
-  font-size: 16px;
-  font-weight: bold;
-}
-
-.links a {
+.links span {
   display: block;
   margin-bottom: 10px;
-  color: #007bff;
-  text-decoration: none;
+  font-weight: bold;
+  cursor: default;
 }
 
 input[type="text"] {
@@ -65,4 +54,9 @@ button {
 
 button:hover {
   background-color: #ff5722;
+}
+
+/* Disable text selection for non-copyable elements */
+.non-copyable {
+  user-select: none;
 }
