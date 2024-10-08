@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
     warningMessage.classList.add('hidden'); // Hide the warning message initially
 
     if (repoLink === "") {
-      warningMessage.textContent = "Please input Your forked repo link.";
+      warningMessage.textContent = "Please Enter Your forked repo link.";
       warningMessage.classList.remove('hidden'); // Show the warning message
       return;
     }
@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const githubUrlPattern = /^https:\/\/github\.com\/.+\/.+$/;
 
     if (!githubUrlPattern.test(repoLink)) {
-      warningMessage.textContent = "Please input a valid GitHub repository URL.";
+      warningMessage.textContent = "Please Enter a valid GitHub repository URL.";
       warningMessage.classList.remove('hidden'); // Show the warning message
     } else {
       // Redirect to Heroku deployment page with the GitHub repo URL
