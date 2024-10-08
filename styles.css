@@ -13,34 +13,43 @@ body {
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   text-align: center;
-  width: 300px; /* Fixed width for square shape */
-  height: 350px; /* Fixed height for square shape */
+  width: 260px;  /* Reduced width */
+  height: 310px; /* Reduced height */
   position: relative;
 }
 
+.container::before {
+  content: url('https://i.imgur.com/ZLzqtoW.png'); /* Sample fish image URL */
+  position: absolute;
+  top: -30px;
+  left: -40px;
+  width: 50px;   /* Adjust size of the fish image */
+  height: 50px;  /* Adjust size of the fish image */
+}
+
 h1 {
-  font-size: 24px;
+  font-size: 22px;
   margin-bottom: 10px;
 }
 
 .fork-counter {
-  margin-bottom: 10px; /* Reduced margin for better spacing */
+  margin-bottom: 8px; /* Reduced margin for better spacing */
 }
 
 .deploy-text {
-  font-size: 16px; /* Text size for deploy instruction */
-  margin-bottom: 15px; /* Space below the text */
+  font-size: 14px; /* Text size for deploy instruction */
+  margin-bottom: 12px; /* Space below the text */
 }
 
 .links {
   display: flex; /* Use flexbox to arrange items in a row */
   justify-content: center; /* Center the links */
-  margin-bottom: 15px;
+  margin-bottom: 12px;
   font-weight: bold; /* Make text bold for the entire links container */
 }
 
 .link-item {
-  margin: 0 5px; /* Add some spacing between items */
+  margin: 0 4px; /* Add some spacing between items */
 }
 
 .links a {
@@ -50,13 +59,13 @@ h1 {
 
 .separator {
   color: black; /* Color for the separator */
-  margin: 0 5px; /* Spacing around the separator */
+  margin: 0 4px; /* Spacing around the separator */
 }
 
 input[type="text"] {
   width: 100%;
-  padding: 8px;
-  margin-bottom: 15px;
+  padding: 6px;
+  margin-bottom: 12px;
   border: 1px solid #ccc;
   border-radius: 5px;
 }
@@ -65,7 +74,7 @@ button {
   background-color: #ff7043;
   color: white;
   border: none;
-  padding: 10px 20px;
+  padding: 8px 18px;
   border-radius: 5px;
   cursor: pointer;
 }
@@ -82,7 +91,7 @@ button:hover {
 /* Warning message styles */
 .warning {
   color: red;
-  margin-top: 15px;
+  margin-top: 12px;
   font-weight: bold;
 }
 
