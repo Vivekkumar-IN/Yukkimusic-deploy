@@ -3,6 +3,12 @@ document.addEventListener("DOMContentLoaded", () => {
   const repoLinkInput = document.getElementById('repo-link');
   const warningMessage = document.getElementById('warning-message');
 
+  // Check for the 'deploy' URL parameter with value 'heroku'
+  const urlParams = new URLSearchParams(window.location.search);
+  if (urlParams.get('deploy') === 'heroku') {
+    warningMessage.textContent = "ᴘʟᴇᴀsᴇ ᴇɴᴛᴇʀ ʏᴏᴜʀ ғᴏʀᴋᴇᴅ ʀᴇᴘᴏ ʟɪɴᴋ.";
+    warningMessage.classList.remove('hidden'); // Show the warning message
+  }
 
   // Fetch fork count from GitHub API
   fetch('https://api.github.com/repos/TheTeamVivek/YukkiMusic')
