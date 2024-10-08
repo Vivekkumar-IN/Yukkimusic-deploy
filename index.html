@@ -1,33 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YukkiMusic</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yukki Music Bot</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <!-- Fish Image (Adjust as needed in CSS) -->
-        <img src="fish.png" class="fish" alt="fish">
-        <h1><i class="fas fa-headphones-alt"></i> YukkiMusic</h1>
-        <p class="fork-count">Forks: <span id="forks">Loading...</span></p>
-
-        <div class="links">
-            <a href="https://t.me/TheYukki" class="repo-link">Channel</a>
-            <a href="https://notreallyshikhar.gitbook.io/yukkimusicbot" class="repo-link">Documentation</a>
-            <a href="https://t.me/YukkiSupport" class="repo-link">Support</a>
-        </div>
-
-        <input type="text" id="repo-url" placeholder="Input Your Forked Repo Link">
-        <button id="deploy-btn">Deploy Now</button>
-        
-        <!-- Warning Message -->
-        <p id="warning" class="warning" style="display: none;">Please enter a valid GitHub repository URL!</p>
+  <div class="container">
+    <h1>Yukki Music Bot</h1>
+    <div class="fork-counter">
+      <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub">
+      <span id="fork-count">0</span> Forks
     </div>
+    <div class="links">
+      <a href="https://t.me/TheYukki" target="_blank">Channel</a>
+      <a href="https://notreallyshikhar.gitbook.io/yukkimusicbot" target="_blank">Documentation</a>
+      <a href="https://t.me/YukkiSupport" target="_blank">Support</a>
+    </div>
+    <input type="text" placeholder="Input Your Forked Repo Link" id="repo-link">
+    <button id="deploy-button">Deploy Now</button>
+  </div>
 
-    <!-- JavaScript File -->
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
