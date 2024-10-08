@@ -1,5 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
   const forkCountElement = document.getElementById("fork-count");
+  const deployButton = document.getElementById('deploy-button');
+  const repoLinkInput = document.getElementById('repo-link');
+  const warningMessage = document.getElementById('warning-message');
 
   // Fetch fork count from GitHub API
   fetch('https://api.github.com/repos/TheTeamVivek/YukkiMusic')
@@ -12,21 +15,21 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
   // Add functionality for the deploy button
-  const deployButton = document.getElementById('deploy-button');
-  const repoLinkInput = document.getElementById('repo-link');
-
   deployButton.addEventListener('click', () => {
     const repoLink = repoLinkInput.value.trim();
+    warningMessage.classList.add('hidden'); // Hide the warning message initially
 
     if (repoLink === "") {
-      alert("Please input a forked repo link.");
+      warningMessage.textContent = "Please input a forked repo link.";
+      warningMessage.classList.remove('hidden'); // Show the warning message
       return;
     }
 
     const githubUrlPattern = /^https:\/\/github\.com\/.+\/.+$/;
 
     if (!githubUrlPattern.test(repoLink)) {
-      alert("Please input a valid GitHub repository URL.");
+      warningMessage.textContent = "Please input a valid GitHub repository URL.";
+      warningMessage.classList.remove('hidden'); // Show the warning message
     } else {
       // Redirect to Heroku deployment page with the GitHub repo URL
       const herokuUrl = `https://dashboard.heroku.com/new?template=${encodeURIComponent(repoLink)}`;
