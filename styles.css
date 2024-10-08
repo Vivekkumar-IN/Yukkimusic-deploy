@@ -28,11 +28,17 @@ h1 {
   margin-bottom: 20px;
 }
 
-.links span {
+.links a {
   display: block;
   margin-bottom: 10px;
   font-weight: bold;
-  cursor: default;
+  color: #007bff; /* Make the links blue */
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.links a:hover {
+  text-decoration: underline;
 }
 
 input[type="text"] {
@@ -59,4 +65,9 @@ button:hover {
 /* Disable text selection for non-copyable elements */
 .non-copyable {
   user-select: none;
+}
+
+.blue-bold {
+  font-weight: bold;
+  color: #007bff; /* Blue color */
 }
