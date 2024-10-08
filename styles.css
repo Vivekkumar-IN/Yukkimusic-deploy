@@ -28,7 +28,7 @@ h1 {
 
 .links {
   display: flex; /* Use flexbox to arrange items in a row */
-  justify-content: space-between; /* Space out the links evenly */
+  justify-content: center; /* Center the links */
   margin-bottom: 15px;
 }
 
@@ -37,8 +37,14 @@ h1 {
 }
 
 .links a {
-  color: black; /* Plain color */
+  color: blue; /* Blue color for links */
   text-decoration: none; /* No underline */
+  font-weight: bold; /* Make text bold */
+}
+
+.separator {
+  color: black; /* Color for the separator */
+  margin: 0 5px; /* Spacing around the separator */
 }
 
 input[type="text"] {
