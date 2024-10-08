@@ -13,7 +13,8 @@ body {
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   text-align: center;
-  width: 300px;
+  width: 300px; /* Fixed width for square shape */
+  height: 350px; /* Fixed height for square shape */
   position: relative;
 }
 
@@ -23,7 +24,12 @@ h1 {
 }
 
 .fork-counter {
-  margin-bottom: 20px;
+  margin-bottom: 10px; /* Reduced margin for better spacing */
+}
+
+.deploy-text {
+  font-size: 16px; /* Text size for deploy instruction */
+  margin-bottom: 15px; /* Space below the text */
 }
 
 .links {
