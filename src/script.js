@@ -20,11 +20,16 @@ document.addEventListener("DOMContentLoaded", () => {
   deployButton.addEventListener('click', () => {
     const repoLink = repoLinkInput.value.trim();
     warningMessage.classList.add('hidden'); // Hide the warning message initially
-    repoLinkInput.value = ""; // Clear the input field
+
+    // Clear the input field if there's an issue
+    const clearInput = () => {
+      repoLinkInput.value = ""; // Clear the input field
+    };
 
     if (repoLink === "") {
       warningMessage.textContent = "Please enter your forked repo link.";
       warningMessage.classList.remove('hidden'); // Show the warning message
+      clearInput(); // Clear the input field
       return;
     }
 
@@ -33,6 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (!githubUrlPattern.test(repoLink)) {
       warningMessage.textContent = "Please enter a valid GitHub repository URL.";
       warningMessage.classList.remove('hidden'); // Show the warning message
+      clearInput(); // Clear the input field
       return; // Exit the function here
     }
 
