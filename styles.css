@@ -1,87 +1,71 @@
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #e7f0f7;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
 }
 
-.card {
-    background-color: white;
-    width: 320px;
+.container {
+    width: 350px;
     padding: 20px;
+    background-color: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 12px;
+    margin: 50px auto;
     text-align: center;
     position: relative;
 }
 
-.fish-icon {
+.fish {
     position: absolute;
-    top: -20px;
-    left: 20px;
-    width: 50px;
+    top: -30px;
+    left: -20px;
+    width: 60px;
 }
 
 h1 {
-    margin: 20px 0;
     font-size: 24px;
+    margin-bottom: 10px;
 }
 
-.github-section {
-    margin: 10px 0;
-}
-
-.fork-btn {
-    background-color: #24292e;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.fork-btn .fork-count {
-    margin-left: 8px;
-    font-weight: bold;
+.fork-count {
+    font-size: 16px;
+    margin-bottom: 10px;
 }
 
 .links {
-    margin: 15px 0;
+    margin: 10px 0;
 }
 
-.links a {
-    margin: 0 10px;
+.repo-link {
+    display: block;
+    margin: 10px 0;
+    font-size: 18px;
+    color: #333;
     text-decoration: none;
-    color: #007bff;
-    font-weight: bold;
 }
 
-.repo-link-input {
+input[type="text"] {
     width: 100%;
     padding: 10px;
-    margin: 15px 0;
+    margin-bottom: 20px;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 6px;
+    font-size: 16px;
 }
 
-.deploy-btn {
+button {
     background-color: #ff5e57;
     color: white;
     padding: 10px 20px;
     border: none;
-    border-radius: 5px;
-    cursor: pointer;
+    border-radius: 6px;
     font-size: 16px;
-    font-weight: bold;
+    cursor: pointer;
 }
 
-.deploy-btn:hover {
-    background-color: #ff2a22;
-  }
-  
+button:hover {
+    background-color: #ff3e37;
+}
+
+.warning {
+    color: red;
+}
