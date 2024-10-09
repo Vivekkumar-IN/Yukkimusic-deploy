@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
     warningMessage.style.marginTop = "0"; 
 
     if (repoLink === "") {
-      warningMessage.textContent = "url wrong he .";
+      warningMessage.textContent = "Would you mind checking your URL once more? I believe there might be a slight error. 😊🔗..";
       warningMessage.classList.remove('hidden');
       warningMessage.style.marginTop = "15px"; 
       hideWarningAfterDelay(); 
@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const githubUrlPattern = /^https:\/\/github\.com\/.+\/.+$/;
 
     if (!githubUrlPattern.test(repoLink)) {
-      warningMessage.textContent = "Plaes enter valid url .";
+      warningMessage.textContent = "It looks like that URL is incorrect..";
       warningMessage.classList.remove('hidden'); 
       warningMessage.style.marginTop = "15px";
       hideWarningAfterDelay(); 
