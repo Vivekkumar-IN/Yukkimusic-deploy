@@ -4,7 +4,7 @@ This repository contains a simple web-based deployment guide script for deployin
 
 ## Live Site
 
-You can access the live deployment guide [here](https://vivekkumar-in.github.io/Yukkimusic-deploy).
+You can access the live deployment guide [here](https://vivekkumar-in.github.io/deploy-to-heroku).
 
 ## Features
 
