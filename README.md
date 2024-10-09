@@ -18,11 +18,14 @@ You can access the live deployment guide [here](https://vivekkumar-in.github.io/
 - CSS
 - JavaScript
 
+## Collaborators
 
-# Note
+- **MuraliBotz**: Significant contributions to the project.
+
+## Note
 
 I don't have much experience with HTML, CSS, or JavaScript. This script was created with the help of AI. If you have any suggestions for improvements or updates, feel free to open a pull request.
 
-# License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](https://github.com/Vivekkumar-IN/n/blob/master/LICENSE) file for details.
