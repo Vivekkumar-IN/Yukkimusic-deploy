@@ -33,7 +33,8 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     // Redirect to Heroku deployment page with the GitHub repo URL
-    const herokuUrl = `https://dashboard.heroku.com/new?template=${encodeURIComponent(repoLink)}`;
+    const herokuUrl = `https://dashboard.heroku.com/new?template=${encodeURIComponent(repoLink)}&env[UPSTREAM_REPO]=${encodeURIComponent(repoLink)}`;
+
     window.open(herokuUrl, '_blank');
   });
 });
