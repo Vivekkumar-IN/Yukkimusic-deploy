@@ -1,6 +1,6 @@
 # YᴜᴋᴋɪMᴜsɪᴄ Deployment Guide
 
-This repository contains a simple web-based deployment guide script for deploying projects to **Heroku**. The script allows users to input their repository URL and displays step-by-step instructions for deployment.
+This repository contains a simple web-based deployment guide script for deploying projects to **Heroku**. The script allows users to input their repository URL and redirects them to their repository's deployment page.
 
 ## Live Site
 
@@ -8,9 +8,7 @@ You can access the live deployment guide [here](https://vivekkumar-in.github.io/
 
 ## Features
 
-- **Deployment to Heroku**: Provides tailored instructions for deploying your project on Heroku.
-- **User Input**: Users can input their GitHub repository URL.
-- **Dynamic Instructions**: Displays deployment steps based on the selected deployment type.
+- **User Input**: Users can input their GitHub repository URL, and they will be redirected to their repository deployment.
 
 ## Technologies Used
 
@@ -20,7 +18,7 @@ You can access the live deployment guide [here](https://vivekkumar-in.github.io/
 
 ## Collaborators
 
-- **MuraliBotz**: Significant contributions to the project.
+- [**MuraliBotz**](https://github.com/Muralibotz): Significant contributions to the project.
 
 ## Note
 
