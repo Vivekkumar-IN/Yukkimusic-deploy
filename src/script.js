@@ -3,24 +3,11 @@ document.addEventListener("DOMContentLoaded", () => {
   const repoLinkInput = document.getElementById('repo-link');
   const warningMessage = document.getElementById('warning-message');
 
-
-  // Fetch fork count from GitHub API
-  fetch('https://api.github.com/repos/TheTeamVivek/YukkiMusic')
-    .then(response => response.json())
-    .then(data => {
-      const forkCountElement = document.createElement('div');
-      forkCountElement.id = "fork-count";
-      forkCountElement.textContent = data.forks_count;
-      document.querySelector('.fork-counter').appendChild(forkCountElement);
-    })
-    .catch(error => {
-      console.error('Error fetching fork count:', error);
-    });
-
   // Add functionality for the deploy button
   deployButton.addEventListener('click', () => {
     const repoLink = repoLinkInput.value.trim();
     warningMessage.classList.add('hidden'); // Hide the warning message initially
+    warningMessage.style.marginTop = "0"; // Reset margin when hidden
 
     // Clear the input field if there's an issue
     const clearInput = () => {
@@ -30,6 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (repoLink === "") {
       warningMessage.textContent = "ᴘʟᴇᴀsᴇ ᴇɴᴛᴇʀ ʏᴏᴜʀ ғᴏʀᴋᴇᴅ ʀᴇᴘᴏ ʟɪɴᴋ.";
       warningMessage.classList.remove('hidden'); // Show the warning message
+      warningMessage.style.marginTop = "15px"; // Add margin when visible
       clearInput(); // Clear the input field
       return;
     }
@@ -39,6 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (!githubUrlPattern.test(repoLink)) {
       warningMessage.textContent = "Pʟᴇᴀsᴇ ᴇɴᴛᴇʀ ᴀ ᴠᴀʟɪᴅ GɪᴛHᴜʙ ʀᴇᴘᴏsɪᴛᴏʀʏ URL.";
       warningMessage.classList.remove('hidden'); // Show the warning message
+      warningMessage.style.marginTop = "15px"; // Add margin when visible
       clearInput(); // Clear the input field
       return; // Exit the function here
     }
