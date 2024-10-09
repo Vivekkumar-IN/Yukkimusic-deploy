@@ -5,6 +5,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  margin: 0; /* Remove margin for a full-page layout */
 }
 
 .container {
@@ -13,9 +14,9 @@ body {
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   text-align: center;
-  width: 300px; /* Fixed width for square shape */
-  height: 350px; /* Fixed height for square shape */
-  position: relative;
+  width: 100%; /* Adjust width to fill the available space */
+  max-width: 400px; /* Max width to make it look good on larger screens */
+  margin: 20px; /* Add margin for some spacing around the container */
 }
 
 h1 {
@@ -68,6 +69,7 @@ button {
   padding: 10px 20px;
   border-radius: 5px;
   cursor: pointer;
+  width: 100%; /* Make button full width */
 }
 
 button:hover {
@@ -82,10 +84,10 @@ button:hover {
 /* Warning message styles */
 .warning {
   color: red;
-  margin-top: 15px;
   font-weight: bold;
 }
 
+/* Adjust warning visibility */
 .hidden {
   display: none;
 }
