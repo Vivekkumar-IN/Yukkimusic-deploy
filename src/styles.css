@@ -142,20 +142,20 @@ input[type="text"]:hover {
 }
 
 button {
-    padding: 10px 20px;
-    background-color: transparent;
-    border: 2px solid cyan;
+    padding: 10px 70px;
+    background-color: #ff7043;
+    border: 2px solid #ff7043;
     border-radius: 5px;
-    color: black;
+    color: white;
     font-weight: bold;
     cursor: pointer;
     transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s;
 }
 
 button:hover {
-    background-color: cyan;
+    background-color: #ff7043;
     color: white;
-    box-shadow: 0 0 50px cyan;
+    box-shadow: 0 0 50px #ff7043;
     transform: scale(1.1);
 }
 
@@ -309,4 +309,58 @@ button:hover {
   transition: opacity 2s ease-in-out;
   padding: 20px;
   text-align: center;
+}
+
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  overflow: hidden; 
+}
+
+.herb {
+  position: absolute;
+  width: 40px; 
+}
+
+
+.herb1 {
+  top: 5%;
+  left: 10%;
+}
+.herb2 {
+  top: 10%;
+  right: 15%;
+}
+.herb3 {
+  top: 15%;
+  left: 20%;
+}
+.herb4 {
+  top: 20%;
+  right: 25%;
+}
+.herb5 {
+  top: 25%;
+  left: 30%;
+}
+.herb6 {
+  bottom: 10%;
+  left: 50%;
+}
+.herb7 {
+  bottom: 20%;
+  right: 10%;
+}
+.herb8 {
+  bottom: 30%;
+  left: 70%;
+}
+.herb9 {
+  bottom: 5%;
+  right: 20%;
 }
