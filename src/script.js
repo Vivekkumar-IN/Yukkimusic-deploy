@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
       warningMessage.textContent = "Would you mind checking your URL once more? I believe there might be a slight error. 😊🔗..";
       warningMessage.classList.remove('hidden');
       warningMessage.style.marginTop = "15px"; 
-      hideWarningAfterDelay(); 
+ //     hideWarningAfterDelay(); 
       return;
     }
 
@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
       warningMessage.textContent = "It looks like that URL is incorrect..";
       warningMessage.classList.remove('hidden'); 
       warningMessage.style.marginTop = "15px";
-      hideWarningAfterDelay(); 
+//      hideWarningAfterDelay(); 
       return;
     }
 
